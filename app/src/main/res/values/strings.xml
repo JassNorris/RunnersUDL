@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">RunnersUDL</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps">RunnersUDL</string>
 
     <!-- INICIO DE SESIÓN - REGISTRO -->
     <string name="hint_email">Email</string>
