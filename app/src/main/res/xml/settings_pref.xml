@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Datos">
+
+        <EditTextPreference
+            android:defaultValue="75"
+            android:key="@string/keyPeso"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:dialogTitle="Introduce el peso"
+            android:summary="Cambia el valor de tu peso"
+            android:inputType="number"
+            android:title="Peso" />
+
+        <EditTextPreference
+            android:defaultValue="175"
+            android:key="@string/keyAltura"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:singleLine="true"
+            android:dialogTitle="Introduce la altura"
+            android:summary="Cambia el valor de tu altura"
+            android:title="Altura" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Conectividad">
+
+        <ListPreference
+            android:title="Descarga"
+            android:summary="Conectividad a internet requerida para descargar."
+            android:key="listPref"
+            android:defaultValue="Wi-Fi"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Notificaciones">
+
+        <CheckBoxPreference
+            android:title="Permitir notificaciones"
+            android:defaultValue="false"
+            android:key="summaryPref" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

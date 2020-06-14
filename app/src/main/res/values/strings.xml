@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">RunnersUDL</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- INICIO DE SESIÓN - REGISTRO -->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirm_password">Confirmar contraseña</string>
+    <string name="text_login">Iniciar sesión</string>
+    <string name="text_login_">Iniciar sesión</string>
+    <string name="text_register">Registrarse</string>
+    <string name="success_message_login">Sesión iniciada correctamente como %s</string>
+    <string name="success_message_register">Registro completo satisfactoriamente como %s</string>
+    <string name="text_not_member">No tienes cuenta? <u><b>Crea una nueva</b></u></string>
+    <string name="text_already_member">Ya eres miembro? <u><b>Inicia sesión</b></u></string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="registro">Registro</string>
+    <string name="kg">kg</string>
+    <string name="cm">cm</string>
+
+    <!-- ERRORES -->
+    <string name="email_vacio">El email no puede estar vacío.</string>
+    <string name="contraseña_vacia">La contraseña no puede estar vacía.</string>
+    <string name="peso_vacio">No puede estar vacío.</string>
+    <string name="altura_vacia">No puede estar vacía.</string>
+    <string name="email_no_valido">El email no es válido.</string>
+    <string name="contraseña_no_valida">La contraseña no es válida.</string>
+    <string name="peso_no_valido">El peso solo puede contener números.</string>
+    <string name="altura_no_valida">La altura solo puede contener números.</string>
+    <string name="contraseña_no_coincide">Las contraseñas no coinciden.</string>
+    <string name="no_sensor">No dispones de un sensor para contar los pasos</string>
+    <string name="objetivo_cambiado">Objetivo cambiado satisfactoriamente</string>
+
+    <!-- ESTADISTICAS -->
+    <string name="estadisticas">Estadisticas</string>
+    <string name="historial">Ver Historial</string>
+    <string name="km">Km</string>
+    <string name="cal">Kcal</string>
+    <string name="estadisticas_de_hoy">Estadísticas de hoy</string>
+    <string name="porcentajeObjetivo">%.2f</string>
+    <string name="nuevo_objetivo">Nuevo objetivo</string>
+    <string name="objetivo">Obj. <u>%d</u>\</string>
+    <string name="kilometros">%.2f\</string>
+    <string name="error_no_sensor">ERROR</string>
+    <string name="pasos">pasos</string>
+    <string name="percent">%1$d%%</string>
+
+    <!-- Rutas -->
+    <string name="rutas">Rutas</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan arcu ac tortor mattis tincidunt nec in dui. Aenean elementum magna at dapibus tristique. Etiam eu lobortis orci. Phasellus eleifend augue et hendrerit scelerisque. Suspendisse vehicula tempor eros sed fermentum. Nulla aliquam dapibus tellus, a porta mauris finibus eget. Sed vestibulum tellus sed neque bibendum blandit. Nam dictum urna ut mi egestas, at gravida tortor auctor. Etiam tempor enim in lectus vulputate, sed euismod dolor sagittis. Pellentesque scelerisque hendrerit massa sed rutrum. Cras non posuere tellus. Morbi sodales sem ac libero ullamcorper, eget imperdiet nisi blandit.</string>
+    <string name="no_hay_ningun_ruta_seleccionado">No hay ningun ruta seleccionado</string>
+    <string name="selecciona_un_ruta_en_el_menu">Selecciona un ruta en el menu</string>
+    <string name="ruta_activo">Ruta activa</string>
+    <string name="permiso_denegado">El permiso ha sido denegado pero es necesario para una buena funcionalidad de la aplicación.</string>
+    <string name="ruta_creada">Ruta creada satisfactoriamente</string>
+    <string name="permisos_necesarios">Los permisos de localización son necesarios para la correcta funcionalidad de la aplicación</string>
+
+    <!-- KEYS -->
+    <string name="keyPeso">peso</string>
+    <string name="keyAltura">altura</string>
+    <string name="keyPassword">password</string>
+    <string name="keyEmail">email</string>
+
+    <!-- PERFIL -->
+    <string name="perfil">Perfil</string>
+
+    <!-- ACTIVITY RECOGNITION -->
+    <string name="track">Track Activity</string>
+    <string name="percentage">%1$d%%</string>
+    <string name="bicycle">Estás en bici</string>
+    <string name="foot">Estás caminando</string>
+    <string name="running">Estás corriendo</string>
+    <string name="still">Estás parado</string>
+    <string name="tilting">¿?</string>
+    <string name="unknown_activity">¿?</string>
+    <string name="vehicle">Estás en coche</string>
+    <string name="walking">Estás andando</string>
+    <string name="ranking">Ranking</string>
+    <string name="pasos_C">Pasos</string>
+    <string name="kilometros_C">Kilometros</string>
+    <string name="rutas_c">Rutas</string>
+    <string name="loading">Loading...</string>
+    <string name="hoy">Hoy</string>
+    <string name="introduce_el_nuevo_objetivo_de_pasos">Introduce el nuevo objetivo de pasos.</string>
+    <string name="cambiar_objetivo">Cambiar objetivo</string>
+    <string name="pass">********</string>
+    <string name="no_internet_connection">NO HAY CONEXIÓN A INTERNET\nO LA CONEXIÓN ACTUAL NO CUMPLE TUS PREFERENCIAS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="default_notification_channel_id">Canal Runners</string>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:layout_marginTop="12dp"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/estadisticas_de_hoy"
+        android:textSize="18sp"
+        android:textColor="@color/colorInit"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:id="@+id/progress_fl"
+        android:layout_centerHorizontal="true">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/run" />
+
+        <TextView
+            android:id="@+id/pasos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9784"
+            android:textColor="@color/colorInit"
+            android:layout_gravity="center|bottom"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/extra_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_fl"
+        android:orientation="horizontal"
+        android:paddingBottom="32dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cal_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rectangle" />
+
+            <TextView
+                android:id="@+id/textCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cal_rectangle"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/cal"
+                android:textStyle="bold"
+                android:textColor="@color/colorInit"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/calorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textCal"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="317.6"
+                android:textAlignment="center"
+                android:textColor="@color/colorInit"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/calorias"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/ic_cal_black_24dp"
+                android:paddingTop="32dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/run_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rectangle" />
+
+            <TextView
+                android:id="@+id/km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/run_rectangle"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/km"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorInit"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kilometros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/km"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="3.40"
+                android:textAlignment="center"
+                android:textColor="@color/colorInit"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/run_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/kilometros"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/ic_run_black_24dp"
+                android:paddingTop="32dp"
+                android:tint="@color/design_default_color_primary_dark" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/historial"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@+id/extra_data"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/historial_button"
+        android:drawableStart="@drawable/ic_listar_white_24dp"
+        android:text="@string/historial"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_listar_white_24dp" />
+</RelativeLayout>

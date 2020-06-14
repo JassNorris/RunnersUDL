@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Used in the BottomNavigationView | Text color will be different if it's activated or not  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="@android:color/white" />
+    <item android:color="@color/colorSecondary"  />
+</selector>
