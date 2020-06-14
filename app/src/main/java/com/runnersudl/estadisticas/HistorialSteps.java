@@ -78,7 +78,7 @@ public class HistorialSteps extends AppCompatActivity {
                             }
 
                             estadisticas.sort(Comparator.comparing(Estadistica::getDate).reversed());
-                            //mAdapter.notifyDataSetChanged();
+                            mAdapter.notifyDataSetChanged();
                             view.setVisibility(View.INVISIBLE);
                         }
                     }
